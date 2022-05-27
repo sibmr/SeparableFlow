@@ -5,3 +5,5 @@ checkpoints
 slurm_output
 .env
 .vscode
+*.pth
+Pipfile

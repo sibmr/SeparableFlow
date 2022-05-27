@@ -448,7 +448,11 @@ def main_worker(gpu, ngpus_per_node, argss):
         
         # for kitti, valdiate on the kitti training dataset
         elif args.stage == 'kitti':
-            loss_tmp = val(val_data_loader, model, split='kitti')
+            
+            # results in error
+            # loss_tmp = val(val_data_loader, model, split='kitti')
+
+            pass
 
     # if the current process is the main process, then save the model one final time after training
     if main_process():
